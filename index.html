@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f766e">
+  <meta name="description" content="Sổ tay từ vựng tiếng Anh dùng trên Android, có thể hoạt động ngoại tuyến.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Sổ tay từ vựng</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Về trang chính">
+        <img src="./icons/icon-192.png" alt="" width="42" height="42">
+        <span>
+          <strong>Sổ tay từ vựng</strong>
+          <small>English practice</small>
+        </span>
+      </a>
+      <button class="icon-button" id="home-button" type="button" aria-label="Trang chính" title="Trang chính">
+        <span aria-hidden="true">⌂</span>
+      </button>
+    </header>
+
+    <main id="app" class="main-content" tabindex="-1" aria-live="polite"></main>
+
+    <footer class="app-footer">
+      Dữ liệu được lưu trên thiết bị này. Hãy xuất file JSON để sao lưu hoặc chuyển máy.
+    </footer>
+  </div>
+
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+  <script src="./app.js" defer></script>
+</body>
+</html>
